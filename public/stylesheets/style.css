@@ -1,0 +1,168 @@
+.header img {
+  max-width: 25%;
+}
+.header {
+  padding-top: 20px;
+}
+.content {
+  padding-top: 20px;
+}
+.firstheading {
+  border: solid 2px;
+  border-top-right-radius: 50px 30px;
+  border-bottom-right-radius: 50px 30px;
+  border-color: #DD2476;
+  padding: 8px 0 8px 0;
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 600px;
+  font-family: 'Shadows Into Light Two', italic;
+}
+.custom-select {
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.secheading {
+  border: solid 2px;
+  border-top-left-radius: 50px 30px;
+  border-bottom-left-radius: 50px 30px;
+  border-color: #FF512F;
+  padding: 8px 0 8px 0;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 800px;
+  font-family: 'Shadows Into Light Two', italic;
+
+}
+.form-control {
+  width: 500px;
+  margin:0 auto;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.date {
+  border: solid 2px;
+  border-top-right-radius: 50px 30px;
+  border-bottom-right-radius: 50px 30px;
+  border-color: #DD2476;
+  padding: 8px 0 8px 0;
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 600px;
+  margin-top: 10px;
+  font-family: 'Shadows Into Light Two', italic;
+}
+  ul {list-style-type: none;}
+ body {font-family: Verdana, sans-serif;}
+
+ /* Month header */
+ .month {
+     margin: 0 auto;
+     margin-top: 10px;
+     padding: 70px 25px;
+     width: 55%;
+     background: linear-gradient(-90deg, #FF512F, #DD2476);
+     border-radius: 10px;
+ }
+
+ /* Month list */
+ .month ul {
+     margin: 0;
+     padding: 0;
+ }
+
+ .month ul li {
+     color: white;
+     font-size: 20px;
+     text-transform: uppercase;
+     letter-spacing: 3px;
+ }
+
+ /* Previous button inside month header */
+ .month .prev {
+     float: left;
+     padding-top: 10px;
+ }
+
+ /* Next button */
+ .month .next {
+     float: right;
+     padding-top: 10px;
+ }
+
+ /* Weekdays (Mon-Sun) */
+ .weekdays {
+     margin: 0 auto;
+     padding: 10px 0;
+     background-color:#ddd;
+     border-radius: 10px;
+     width: 55%;
+ }
+
+ .weekdays li {
+     display: inline-block;
+     width: 10%;
+     color: #666;
+     text-align: center;
+ }
+
+ /* Days (1-31) */
+ .days {
+     padding: 10px 0;
+     background: #eee;
+     margin: 0 auto;
+     margin-bottom: 10px;
+     border-radius: 10px;
+     width: 55%;
+ }
+
+ .days li {
+     list-style-type: none;
+     display: inline-block;
+     width: 10%;
+     text-align: center;
+     margin-bottom: 5px;
+     font-size:12px;
+     color:#777;
+ }
+
+ /* Highlight the "current" day */
+ .days li .active {
+     padding: 5px;
+     background: #FF512F;
+     color: white !important
+ }
+
+ .btns {
+   padding-top: 20px;
+ }
+ .btn-primary-inline {
+   background: linear-gradient(-90deg, #FF512F, #DD2476);
+   color: white;
+   width: 100px;
+ }
+ .btn-outline-secondary-inline {
+   background: transparent;
+   color: grey;
+   border: solid 2px grey;
+   width: 100px;
+ }
+
+ .italy {
+   border: solid 2px;
+   border-top-right-radius: 50px 30px;
+   border-bottom-right-radius: 50px 30px;
+   border-color: #DD2476;
+   padding: 8px 0 8px 0;
+   margin: 0 auto;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   width: 600px;
+   font-family: 'Shadows Into Light Two', italic;
+ }
+
+ .col p {
+   text-align: justify;
+ }
