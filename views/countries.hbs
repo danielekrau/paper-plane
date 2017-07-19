@@ -1,0 +1,25 @@
+<div class="row justify-content-center">
+  <div class="col-4 text-center">
+    <h2 class="italy">{{ country }}</h2>
+  </div>
+</div>
+<div class="information">
+  <div class="container" id="resultsContainer">
+    {{#each cities}}
+      <div class="row">
+        <div class="col-2 text-center">
+          <b>{{ this.name }}</b>
+        </div>
+        <div class="col-4">
+          <img class="cityphoto" src="http://lorempixel.com/400/400/city/{{ this.name }}" style="width:300px;height:250px;">
+        </div>
+        <div class="col-3 text-justify">
+          <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        </div>
+        <div class="col-3 text-left">
+          <p>Flights prices from 38$ to 142$</p>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</div>

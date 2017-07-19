@@ -2,7 +2,7 @@
   <div class="header text-center">
     <img class="img-fluid" src="/images/Logo.png" alt="logo">
   </div>
-  <form method="POST" action="/search">
+  <form method="POST" action="/search" id="mainForm">
     <div class="row justify-content-center">
       <div class="col-6 text-center">
         <h2 class="firstheading"> Where will we go? </h2>
@@ -17,7 +17,7 @@
           </label>
         </div>
         <div>
-          <select class="custom-select" name="continent">
+          <select class="custom-select" name="continent" id="continentSelect">
             <option selected hidden disabled>Select destination</option>
             {{#each continents}}
             <option value="{{ @key }}">{{ this }}</option>
@@ -26,14 +26,12 @@
         </div>
       </div>
     </div>
-    <div class="row justify-content-center" name="country">
+    <div class="row justify-content-center">
       <div class="col-8 text-center">
         <h2 class="secheading"> Which country is the most attractive to you? </h2>
-        <select class="form-control">
+        <select class="form-control" name="country" id="countrySelect">
           <option selected hidden disabled>Country</option>
-          {{#each countries }}
-            <option value="{{ @key }}">{{ this.name }}</option>
-          {{/each}}
+          <!-- Options list will be dynamically injected here -->
         </select>
       </div>
     </div>
@@ -100,32 +98,12 @@
       <div class="col-4 text-center">
         <div class="btns">
           <button type="submit" class="btn btn-primary-inline">Submit</button>
-          <button type="button" class="btn btn-outline-secondary-inline">Cancel</button>
+          <button type="button" class="btn btn-outline-secondary-inline" onClick="cancelSearch()">Cancel</button>
         </div>
       </div>
     </div>
   </form>
-  <div class="row justify-content-center">
-    <div class="col-4 text-center">
-      <h2 class="italy">Italy </h2>
-    </div>
-  </div>
-  <div class="information">
-    <div class="container">
-      <div class="row">
-        <div class="col-2 text-center">
-          <b>Naples</b>
-        </div>
-        <div class="col-4">
-          <img class="cityphoto" src="https://cdn.pixabay.com/photo/2016/11/20/11/09/naples-1842509_960_720.jpg" style="width:300px;height:250px;">
-        </div>
-        <div class="col-3 text-justify">
-          <p class="text">Naples is the capital of the Italian region Campania and the third-largest municipality in Italy, after Rome and Milan.</p>
-        </div>
-        <div class="col-2.75 text-left">
-          <p>Flights prices from 38$ to 142$</p>
-        </div>
-      </div>
-    </div>
+  <div id="resultsContainer">
+    <!-- Countries list will be dynamically injected here (from countries.hbs) -->
   </div>
 </div>

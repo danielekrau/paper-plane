@@ -1,20 +1,15 @@
 var express = require('express');
 var router = express.Router();
 
-var countriesList = require('countries-list');
-var CONTINENTS = countriesList.continents;
-var COUNTRIES = countriesList.countries;
+var ctrl = require('../middleware/countries.js');
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express', continents: CONTINENTS, countries: COUNTRIES });
-});
+router.get('/', ctrl.getHome);
 
-/* POSt search. */
-router.post('/search', function(req, res, next) {
-  var data = req.body;
-  res.json({});
-});
+/* POST search. */
+router.post('/search', ctrl.searchCountry);
 
+/* GET countries in a continent. */
+router.get('/countries/:id', ctrl.searchContinent);
 
 module.exports = router;
