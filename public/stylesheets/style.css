@@ -20,13 +20,17 @@ body {
   border-color: #DD2476;
   padding: 8px 0 8px 0;
   margin: 0 auto;
-  margin-top: 10px;
+  margin-top: 15px;
   font-family: 'Shadows Into Light Two', italic;
 }
+.form-check-input {
+  margin-top: 15px;
+}
+
 .custom-select {
   margin: 0 auto;
   margin-top: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .secheading {
   border: solid 2px;
@@ -36,14 +40,14 @@ body {
   padding: 8px 0 8px 0;
   margin: 0 auto;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   font-family: 'Shadows Into Light Two', italic;
 
 }
 .form-control {
   margin:0 auto;
-  margin-top: 10px;
-  margin-bottom: 5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .date {
   border: solid 2px;
@@ -53,7 +57,7 @@ body {
   padding: 8px 0 8px 0;
   margin: 0 auto;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   margin-left: 10px;
   font-family: 'Shadows Into Light Two', italic;
 }
@@ -116,7 +120,7 @@ body {
      padding: 10px 0;
      background: #eee;
      margin: 0 auto;
-     margin-bottom: 10px;
+     margin-bottom: 5px;
      border-radius: 10px;
      margin-left: 10px;
  }
@@ -140,20 +144,23 @@ body {
 
  .btns {
    padding-top: 10px;
+   padding-bottom: 15px;
  }
  .btn-primary-inline {
    background: linear-gradient(-90deg, #FF512F, #DD2476);
    color: white;
    width: 100px;
+   margin-top: 5px;
  }
  .btn-outline-secondary-inline {
    background: transparent;
    color: grey;
    border: solid 2px grey;
    width: 100px;
+   margin-top: 5px;
  }
 
- .italy {
+ .country {
    border: solid 2px;
    border-top-right-radius: 50px 30px;
    border-bottom-right-radius: 50px 30px;
@@ -167,4 +174,28 @@ body {
 
  .cityphoto {
    padding-bottom: 10px;
+   padding-top: 10px;
+   border-radius: 50%;
  }
+
+.information h3 {
+  border: solid 2px;
+  border-top-left-radius: 50px 30px;
+  border-bottom-left-radius: 50px 30px;
+  border-color: #FF512F;
+  font-family: 'Shadows Into Light Two', italic;
+  margin: 0 auto;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.information h4 {
+  font-family: 'Shadows Into Light Two', italic;
+  margin-bottom: 0px;
+}
+
+.text {
+  margin-top: 10px;
+  margin-right: 30px;
+}
