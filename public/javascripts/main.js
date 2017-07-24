@@ -1,11 +1,17 @@
 $(function() {
 
   $("#mainForm").submit(function(e) {
+    e.preventDefault();
     var url = "/search";
-    $.post(url, $("#mainForm").serialize(), function(data) {
+    var postData = $("#mainForm").serializeArray();
+    if(postData.length < 2) return;
+    var indexedData = {};
+    $.map(postData, function(n, i){
+        indexedData[n['name']] = n['value'];
+    });
+    $.post(url, indexedData, function(data) {
       injectResults(data);
     });
-    e.preventDefault();
   });
 
   $("#continentSelect").change(function(e) {
