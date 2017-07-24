@@ -4,6 +4,10 @@ body {
   background-attachment: fixed;
 }
 
+.main-container {
+  padding: 50px;
+}
+
 .header img {
   max-width: 25%;
 }
@@ -188,6 +192,7 @@ body {
   margin-left: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
+  margin-right: 10px;
 }
 
 .information h4 {
@@ -197,5 +202,6 @@ body {
 
 .text {
   margin-top: 10px;
-  margin-right: 30px;
+  margin-right: 20px;
+  margin-left: 10px;
 }
